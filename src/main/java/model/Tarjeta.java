@@ -1,14 +1,18 @@
 
 package model;
 
+import jakarta.persistence.*;
 import java.math.BigDecimal;
 
-
+@Entity
+@Table(name="saldo")
 public class Tarjeta {
     
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     
-    
+    @Column(unique = true, nullable = false , length = 16)
     private String numeroTarjeta;
     private BigDecimal balance;
     private String nombreTarjeta;

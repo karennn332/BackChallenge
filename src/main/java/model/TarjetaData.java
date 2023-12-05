@@ -1,16 +1,23 @@
 
 package model;
 
+import jakarta.persistence.*;
+
 import java.util.List;
 
+@Entity
 
 public class TarjetaData {
     
-    
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     
+    @Column(unique = true, nullable = false)
     private String label;
     
+    
+    @ElementCollection
     private List<Integer> data;
 
     public Long getId() {

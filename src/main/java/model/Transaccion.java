@@ -1,16 +1,25 @@
 
 package model;
 
+import jakarta.persistence.*;
 import java.util.Date;
+import javax.validation.constraints.Digits;
+import javax.validation.constraints.NotNull;
 
 
+@Entity
+@Table(name="transaccion")
 public class Transaccion {
     
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
      private Long id;
 
     private String icon;
     private String name;
   
+    @NotNull
+    @Digits(integer = Integer.MAX_VALUE, fraction = 0, message = "Solo se aceptan numeros")
     private Number value;
     private Date symbol;
     private String estado;
