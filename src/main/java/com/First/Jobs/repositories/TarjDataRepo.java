@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.First.Jobs.models.TarjetaData;
 
 @Repository
-public interface TargDataRepo extends JpaRepository<TarjetaData, Long> {
+public interface TarjDataRepo extends JpaRepository<TarjetaData, Long> {
 
 }
