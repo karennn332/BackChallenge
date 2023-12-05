@@ -1,5 +1,5 @@
 
-package model;
+package com.First.Jobs.models;
 
 import jakarta.persistence.*;
 
