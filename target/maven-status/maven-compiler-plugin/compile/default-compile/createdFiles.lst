@@ -1,7 +1,0 @@
-model\Tarjeta.class
-model\ApiResponse.class
-model\ItemMenu.class
-model\Transaccion.class
-model\Usuario.class
-com\First\Jobs\JobsApplication.class
-model\TarjetaData.class
