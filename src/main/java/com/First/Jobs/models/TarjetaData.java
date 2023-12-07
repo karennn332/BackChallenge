@@ -6,7 +6,7 @@ import jakarta.persistence.*;
 import java.util.List;
 
 @Entity
-
+@Table(name="tarjetaData")
 public class TarjetaData {
     
     @Id
